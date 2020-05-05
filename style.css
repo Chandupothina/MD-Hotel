@@ -1,0 +1,468 @@
+/* CSS Reset */
+*
+{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* body */
+body
+{
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.7rem;
+  padding-top: 67px;
+}
+/* 
+.container
+{
+  
+  max-width: 1100px;
+  padding: 0 20px;
+  margin: auto;
+  overflow: auto;
+}
+*/
+ul 
+{
+  display: flex;
+}
+
+
+a
+{
+  
+  color: #333;
+  text-decoration: none;
+}
+
+h1,h2,h3
+{
+  padding-bottom: 20px;
+}
+
+
+p
+{
+  margin: 10px 0;
+}
+
+#nav-bar
+{
+  background: #333;
+  color: white;
+  overflow: auto;
+
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  opacity: 0.8;
+  width: 120%;
+  height: 70px;
+  position: fixed;
+  top: 0;
+  padding: 0 30px;    
+}
+ 
+#nav-bar a
+{
+  color: white;
+}
+
+
+ 
+#nav-bar .logo
+{
+  float: left;
+  padding: 20px;
+}
+
+#nav-bar ul 
+{
+  float: right;
+}
+
+#nav-bar ul li
+{
+  list-style: none;
+  float: left;
+}
+
+#nav-bar ul li a
+{
+  display: block;
+  text-align: center;
+  padding: 20px;
+}
+
+#nav-bar ul li a:hover
+{
+  background: #444;
+  color: #f7c08a;
+}
+
+#nav-bar ul li a.current
+{
+  background: #444;
+  color: #f7c08a;
+} 
+/* Modified content */
+.logo
+{
+  color: white;
+  font-size: 35px;
+  line-height: 80px;
+  padding: 0 100px;
+  font-weight: bold;
+}
+
+nav ul
+{
+  float: right;
+  margin-right: 20px;
+}
+
+nav ul li
+{
+  display: inline-block;
+  margin: 0 5px;
+  line-height: 80px;
+}
+
+nav ul li a
+{
+  color: white;
+  font-size: 17px;
+  text-transform: uppercase;
+  padding: 7px 13px;
+  border-radius: 3px;
+}
+
+.active, a:hover
+{
+  background: #1b9bff;
+  transition: .5s;
+}
+
+.checkbtn
+{
+  font-size: 30px;
+  color: white;
+  float: left;
+  line-height: 80px;
+  margin-right: 5px;
+  cursor: pointer;
+  display: none;
+}
+
+#check
+{
+  display: none;
+}
+
+@media (max-width: 952px)
+{
+  .logo
+  {
+    font-size: 30px;
+    padding-left: 10px;
+  }
+  nav ul li a
+  {
+    font-size: 25px;
+  }
+}
+
+@media (max-width: 850px)
+{
+  .checkbtn
+  {
+    display: block;
+  }
+  ul
+  {
+    position: fixed;
+    width: 75%;
+    height: 12vh;
+    background: #2c3e50;
+    top: 70px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  nav ul li
+  {
+    
+    display: inline-block;
+    width: 100%;
+    margin: 25px 5px;
+    line-height: 30px;
+  }
+
+  nav ul li a
+  {
+    
+    
+    font-size: 16px;
+  }
+
+  a:hover, .active
+  {
+    background: none;
+    color: #0082e6;
+  }
+
+  #check:checked ~ ul
+  {
+    left: 0;
+  }
+}
+
+
+
+/* SHowcase  */
+#showcase
+{
+  background: url('showcase.jpg');
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 600px;
+}
+
+#showcase .showcase-content
+{
+  color: #fff;
+  text-align: center;
+  padding-top: 170px;
+}
+
+#showcase .showcase-content h1 
+{
+  font-size: 60px;
+  line-height: 1.2em;
+}
+
+.text-primary 
+{
+  color: #f7c08a;
+}
+
+.lead
+{
+  font-size: 20px;
+}
+
+#showcase .showcase-content p 
+{
+  padding-bottom: 20px;
+  line-height: 1.7em;
+
+}
+
+.btn
+{
+  display: inline-block;
+  background: #333;
+  color: white;
+  padding: 13px 20px;
+  cursor: pointer;
+  border: none;
+}
+
+.btn:hover
+{
+  background: #f7c08a;
+  color: #333;
+}
+
+.btn-light
+{
+  color: #333;
+  background: #f4f4f4;
+}
+
+
+/* Home Info */
+#home-info
+{
+  height: 450px;
+}
+
+.info-img
+{
+  float: left;  
+  display: inline-block;
+  min-width: 50%;
+  min-height: 100%;
+  background: url('photo-1.jpg');
+}
+
+.info-content
+{
+  float: right;
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  text-align: center;
+  padding: 50px 30px;
+  overflow: hidden;
+}
+
+.bg-dark
+{
+  background: #333;
+  color: #fff;
+}
+
+#home-info .info-content p 
+{
+  padding-bottom: 30px;
+}
+
+/* Features */
+.box
+{
+  float: left;
+  width: 33.3%;
+  padding: 50px;
+  text-align: center;
+}
+
+.box i 
+{
+  margin-bottom: 10px;
+}
+
+.bg-light
+{
+  background: #fff;
+  color: #333;
+}
+
+
+.bg-primary
+{
+  background: #f7c08a;
+  color: #333;
+}
+
+/* About Info */
+#about-info .info-right
+{
+  float: right;
+  width: 50%;
+  min-height: 100%;
+}
+
+#about-info .info-right img
+{
+  display: block;
+  margin: auto;
+  width: 70%;
+  border-radius: 50%;
+}
+
+#about-info .info-left
+{
+  float: left;
+  width: 50%;
+  min-height: 100%;
+}
+
+.l-heading
+{
+  font-size: 30px;
+  line-height: 1.2;
+}
+
+/* Padding */
+.py-1 { padding: 10px;}    /* py means padding Y-Axis */
+.py-2 { padding: 20px;}    /* py means padding Y-Axis */
+.py-3 { padding: 30px;}    /* py means padding Y-Axis */
+
+
+/* Testimonials */
+#testimonials
+{
+  height: 100%;
+  background: url('test-bg.jpg') no-repeat center center/cover;
+  padding-top: 100px;
+}
+
+#testimonials .testimonial 
+{
+  padding: 20px;
+  margin-bottom: 40px;
+  border-radius: 10px;
+  opacity: 0.85; 
+  /* opacity is in between 0 to 1.
+     0 is for complete transparent   
+     1 is for complete non-transparent( actual image )
+  */
+}
+
+#testimonials .testimonial img
+{
+  width: 100px;
+  float: left;
+  margin-right: 20px;
+  border-radius: 50%;
+}
+
+#testimonials .container h2
+{
+  color: #fff;
+  text-align: center;
+  padding-bottom: 40px;
+}
+
+
+
+/* Contact form page */
+#contact-form .form-group
+{
+  margin-bottom: 20px;
+}
+
+#contact-form label
+{
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact-form input, #contact-form textarea
+{
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ddd;
+}
+
+#contact-form textarea
+{
+  height: 200px;
+}
+
+#contact-form input:focus, #contact-form textarea:focus
+{
+  outline: none;
+  border-color: #f7c08a;
+}
+
+
+
+/* Footer */
+#main-footer
+{
+  background: #444;
+  text-align: center;
+  color: whitesmoke;
+  padding: 20px;
+  font-size: 18px;
+}
+
+.clr
+{
+  clear: both;
+}
